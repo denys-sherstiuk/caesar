@@ -23,12 +23,12 @@ int main (int argc, string argv[])
             {
                 if (islower(ciphertext[i]))
                 {
-                    int a = (((ciphertext[i] - 97 + key) % 26) + 97);
+                    int a = (((ciphertext[i] - 96 + key) % 26) + 96);
                     printf("%c", a);
                 }
                 if (isupper(ciphertext[i]))
                 {
-                    int b = (((ciphertext[i] - 65 + key) % 26) + 65);
+                    int b = (((ciphertext[i] - 64 + key) % 26) + 64);
                     printf("%c", b);
                 }
             }
